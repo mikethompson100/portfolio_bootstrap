@@ -55,33 +55,33 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
+                            <a href="#" class="nav-link home active" data-content="home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="jsDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" disabled>JavaScript</a> 
+                            data-bs-toggle="dropdown" aria-expanded="false">JavaScript</a> 
                             <ul class="dropdown-menu" aria-labeledby="jsDropdown">
-                                <li><a href="#" class="dropdown-item">Vanilla JavaScript</a></li>
-                                <li><a href="#" class="dropdown-item">jQuery</a></li>
+                                <li><a href="#" class="dropdown-item" data-content="vanillajavascript" >Vanilla JavaScript</a></li>
+                                <li><a href="#" class="dropdown-item" data-content="jquery" >jQuery</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="cssDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" disabled>CSS</a>
+                                data-bs-toggle="dropdown" aria-expanded="false">CSS</a>
                             <ul class="dropdown-menu" aria-labeledby="cssDropdown">
-                                <li><a href="#" class="dropdown-item">CSS Grid</a></li>
-                                <li><a href="#" class="dropdown-item">CSS Flexbox</a></li>
-                                <li><a href="#" class="dropdown-item">SCSS</a></li>
-                                <li><a href="#" class="dropdown-item">LESS</a></li>
+                                <li><a href="#" class="dropdown-item" data-content="cssgrid">CSS Grid</a></li>
+                                <li><a href="#" class="dropdown-item" data-content="cssflexbox">CSS Flexbox</a></li>
+                                <li><a href="#" class="dropdown-item" data-content="scss">SCSS</a></li>
+                                <li><a href="#" class="dropdown-item" data-content="less">LESS</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">                            
                             <a href="#" class="nav-link dropdown-toggle" id="adaDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" disabled>Accessibility</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">Accessibility</a>
                         <ul class="dropdown-menu" aria-labeledby="adaDropdown">
-                            <li><a href="#" class="dropdown-item">WCAG Certification</a></li>
-                            <li><a href="#" class="dropdown-item">JAWS/NVDA</a></li>
-                            <li><a href="#" class="dropdown-item">WAVE Chrome Extension</a></li>
+                            <li><a href="#" class="dropdown-item" data-content="wcag" >WCAG Certification</a></li>
+                            <li><a href="#" class="dropdown-item" data-content="jawsnvda" >JAWS/NVDA</a></li>
+                            <li><a href="#" class="dropdown-item" data-content="wave">WAVE Chrome Extension</a></li>
                         </ul>
                         </li>
                     </ul>
@@ -93,72 +93,75 @@
         <div class="container">
             <h1 class="mb-4">Bootstrap 5</h1>
             <h2>Grid System</h2>
-            <div class="row ms-0">
-                <div class="col-12 border">
-                    <h3>1</h3>
-                    <p class="text-center"><span class="xs">col-12</span></p>
+            <div class="content" id="content-area">
+                <div class="row ms-0">
+                    <div class="col-12 border">
+                        <h3>1</h3>
+                        <p class="text-center"><span class="xs">col-12</span></p>
+                    </div>
+                </div>
+                <div class="row ms-0">
+                    <div class="col-12 col-sm-6 col-md-4 offset-md-4 col-lg-8 offset-lg-0 col-xl-6 border">
+                        <h3>2</h3>
+                        <p class="text-center">
+                            <span class="xs">col-12</span> 
+                            <span class="sm">col-sm-6</span> 
+                            <span class="md">col-md-4 offset-md-4</span> 
+                            <span class="lg">col-lg-8</span> 
+                            <span class="xl">col-xl-6 </span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-6 border">
+                        <h3>3</h3>
+                        <p class="text-center">
+                            <span class="xs">col-12</span> 
+                            <span class="sm">col-sm-6</span> 
+                            <span class="md">col-md-4</span> 
+                            <span class="lg">col-lg-4</span> 
+                            <span class="xl">col-xl-6</span></p>
+                    </div>
+                </div>
+                <div class="row ms-0">
+                    <div class="col-12 col-md-4 border">
+                        <h3>4</h3>
+                        <p class="text-center"><span class="xs">col-12</span> <span
+                            class="md">col-md-4</span></p>
+                    </div>
+                    <div class="col-12 col-md-4 border">
+                        <h3>5</h3>
+                        <p class="text-center"><span class="xs">col-12</span> <span
+                            class="md">col-md-4</span></p>
+                    </div>
+                    <div class="col-12 col-md-4 border">
+                        <h3>6</h3>
+                        <p class="text-center"><span class="xs">col-12</span> <span
+                            class="md">col-md-4</span></p>
+                    </div>
+                </div>
+                <div class="row ms-0">
+                    <div class="col-12 col-md-3 border">
+                        <h3>7</h3>
+                        <p class="text-center"><span class="xs">col-12</span> <span
+                            class="md">col-md-3</span></p>
+                    </div>
+                    <div class="col-12 col-md-3 border">
+                        <h3>8</h3>
+                        <p class="text-center"><span class="xs">col-12</span> <span
+                            class="md">col-md-3</span></p>
+                    </div>
+                    <div class="col-12 col-md-3 border">
+                        <h3>9</h3>
+                        <p class="text-center"><span class="xs">col-12</span> <span
+                            class="md">col-md-3</span></p>
+                    </div>
+                    <div class="col-12 col-md-3 border">
+                        <h3>10</h3>
+                        <p class="text-center"><span class="xs">col-12</span> <span
+                            class="md">col-md-3</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="row ms-0">
-                <div class="col-12 col-sm-6 col-md-4 offset-md-4 col-lg-8 offset-lg-0 col-xl-6 border">
-                    <h3>2</h3>
-                    <p class="text-center">
-                        <span class="xs">col-12</span> 
-                        <span class="sm">col-sm-6</span> 
-                        <span class="md">col-md-4 offset-md-4</span> 
-                        <span class="lg">col-lg-8</span> 
-                        <span class="xl">col-xl-6 </span>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-6 border">
-                    <h3>3</h3>
-                    <p class="text-center">
-                        <span class="xs">col-12</span> 
-                        <span class="sm">col-sm-6</span> 
-                        <span class="md">col-md-4</span> 
-                        <span class="lg">col-lg-4</span> 
-                        <span class="xl">col-xl-6</span></p>
-                </div>
-            </div>
-            <div class="row ms-0">
-                <div class="col-12 col-md-4 border">
-                    <h3>4</h3>
-                    <p class="text-center"><span class="xs">col-12</span> <span
-                        class="md">col-md-4</span></p>
-                </div>
-                <div class="col-12 col-md-4 border">
-                    <h3>5</h3>
-                    <p class="text-center"><span class="xs">col-12</span> <span
-                        class="md">col-md-4</span></p>
-                </div>
-                <div class="col-12 col-md-4 border">
-                    <h3>6</h3>
-                    <p class="text-center"><span class="xs">col-12</span> <span
-                        class="md">col-md-4</span></p>
-                </div>
-            </div>
-            <div class="row ms-0">
-                <div class="col-12 col-md-3 border">
-                    <h3>7</h3>
-                    <p class="text-center"><span class="xs">col-12</span> <span
-                        class="md">col-md-3</span></p>
-                </div>
-                <div class="col-12 col-md-3 border">
-                    <h3>8</h3>
-                    <p class="text-center"><span class="xs">col-12</span> <span
-                        class="md">col-md-3</span></p>
-                </div>
-                <div class="col-12 col-md-3 border">
-                    <h3>9</h3>
-                    <p class="text-center"><span class="xs">col-12</span> <span
-                        class="md">col-md-3</span></p>
-                </div>
-                <div class="col-12 col-md-3 border">
-                    <h3>10</h3>
-                    <p class="text-center"><span class="xs">col-12</span> <span
-                        class="md">col-md-3</span></p>
-                </div>
-            </div>
+
         </div>
     </main>
     <footer>
@@ -171,7 +174,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="src/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
