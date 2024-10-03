@@ -6,4 +6,4 @@
 @media (min-width: 992px) and (max-width: 1199px) { .lg { color: #800000; font-size: 1.15em; font-weight: bold; } } 
 @media (min-width: 1200px)                        { .xl { color: #800000; font-size: 1.15em; font-weight: bold; } } 
 p span {display: block;}
-
+main { min-height: 500px; }

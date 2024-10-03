@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael J. Thompson - Portfolio - Bootstrap Project</title>
+    <title>Michael J. Thompson - Portfolio - Modal</title>
     <meta name="description"
         content="Michael's portfolio project showcasing web development skills in Bootstrap 5, HTML, CSS, WCAG Compliance and JavaScript.">
 
     <!-- SEO: Author and keywords -->
     <meta name="author" content="Michael J. Thompson">
-    <meta name="keywords" content="Web Developer, Bootstrap, Bootstrap 5, Responsive, HTML, CSS, JavaScript, Portfolio">
+    <meta name="keywords" content="Modal, Bootstrap, Bootstrap 5, Portfolio">
 
     <!-- Social Sharing: Open Graph -->
     <meta property="og:title" content="Michael's Web Developer Portfolio">
@@ -54,10 +54,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link home active">Home</a>
+                            <a href="index.html" class="nav-link home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="componentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Components</a>
+                            <a href="#" class="nav-link dropdown-toggle active" id="componentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Components</a>
                             <ul class="dropdown-menu" aria-labelledby="componentsDropdown">
                                 <li>
                                     <a href="accordion.html" class="dropdown-item">Accordion</a>
@@ -88,72 +88,29 @@
     <main class="mt-5 pt-4">
         <div class="container">
             <h1 class="mb-4">Bootstrap 5</h1>
-                <div class="row ms-0">
-                    <div class="col-12 border">
-                        <h3>1</h3>
-                        <p class="text-center"><span class="xs">col-12</span></p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal with 3 buttons
+            </button>
+            
+            <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            With data-bs-backdrop="static" clicking on the backdrop will not close the modal.
+                            With data-bs-keyboard="false" the Escape key will not close the modal.
+                            With tabindex="-1" the backdrop will not be able to be tabbed to.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
                 </div>
-                <div class="row ms-0">
-                    <div class="col-12 col-sm-6 col-md-4 offset-md-4 col-lg-8 offset-lg-0 col-xl-6 border">
-                        <h3>2</h3>
-                        <p class="text-center">
-                            <span class="xs">col-12</span> 
-                            <span class="sm">col-sm-6</span> 
-                            <span class="md">col-md-4 offset-md-4</span> 
-                            <span class="lg">col-lg-8</span> 
-                            <span class="xl">col-xl-6 </span>
-                        </p>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-6 border">
-                        <h3>3</h3>
-                        <p class="text-center">
-                            <span class="xs">col-12</span> 
-                            <span class="sm">col-sm-6</span> 
-                            <span class="md">col-md-4</span> 
-                            <span class="lg">col-lg-4</span> 
-                            <span class="xl">col-xl-6</span></p>
-                    </div>
-                </div>
-                <div class="row ms-0">
-                    <div class="col-12 col-md-4 border">
-                        <h3>4</h3>
-                        <p class="text-center"><span class="xs">col-12</span> <span
-                            class="md">col-md-4</span></p>
-                    </div>
-                    <div class="col-12 col-md-4 border">
-                        <h3>5</h3>
-                        <p class="text-center"><span class="xs">col-12</span> <span
-                            class="md">col-md-4</span></p>
-                    </div>
-                    <div class="col-12 col-md-4 border">
-                        <h3>6</h3>
-                        <p class="text-center"><span class="xs">col-12</span> <span
-                            class="md">col-md-4</span></p>
-                    </div>
-                </div>
-                <div class="row ms-0">
-                    <div class="col-12 col-md-3 border">
-                        <h3>7</h3>
-                        <p class="text-center"><span class="xs">col-12</span> <span
-                            class="md">col-md-3</span></p>
-                    </div>
-                    <div class="col-12 col-md-3 border">
-                        <h3>8</h3>
-                        <p class="text-center"><span class="xs">col-12</span> <span
-                            class="md">col-md-3</span></p>
-                    </div>
-                    <div class="col-12 col-md-3 border">
-                        <h3>9</h3>
-                        <p class="text-center"><span class="xs">col-12</span> <span
-                            class="md">col-md-3</span></p>
-                    </div>
-                    <div class="col-12 col-md-3 border">
-                        <h3>10</h3>
-                        <p class="text-center"><span class="xs">col-12</span> <span
-                            class="md">col-md-3</span></p>
-                    </div>
-                </div>
+            </div>
         </div>
     </main>
     <footer>
