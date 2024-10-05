@@ -88,25 +88,60 @@
     <main class="mt-5 pt-4">
         <div class="container">
             <h1 class="mb-4">Bootstrap 5</h1>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal with 3 buttons
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataBsBackdropStatic">
+                Demo of data-bs-backdrop="static"
             </button>
-            
-            <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataBsKeyBoardFalse">
+                Demo of data-bs-keyboard
+            </button>            
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tabIndex-1">
+                Demo of tabindex="-1"
+            </button>
+
+            <div class="modal fade" id="dataBsBackdropStatic" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="dataBsBackdropStaticLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="dataBsBackdropStaticLabel">Modal title</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            With data-bs-backdrop="static" clicking on the backdrop will not close the modal.
-                            With data-bs-keyboard="false" the Escape key will not close the modal.
-                            With tabindex="-1" the backdrop will not be able to be tabbed to.
+                            With data-bs-backdrop="static" clicking on the backdrop will not close this modal.
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="dataBsKeyBoardFalse" data-bs-keyboard="true" tabindex="-1" aria-labelledby="dataBsKeyBoardFalseLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="dataBsKeyBoardFalseLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            With data-bs-keyboard="true" the Escape key will close this modal. Without having data-bs-backdrop="static", clicking on the backdrop will also close this modal.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="tabIndex-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tabIndex-1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="tabIndex-1Label">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Because Bootstrap modals are on div tags, they are not naturally focusable like with an anchor or button. By having tabindex="-1" we can have it focusable but it won't interrupt the normal tabbing order of the page. When the modal is opened, Bootstrap uses focus() to give the modal focus.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
