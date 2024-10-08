@@ -88,16 +88,29 @@
     <main class="mt-5 pt-4">
         <div class="container">
             <h1 class="mb-4">Bootstrap 5</h1>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataBsBackdropStatic">
-                Demo of data-bs-backdrop="static"
-            </button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataBsKeyBoardFalse">
-                Demo of data-bs-keyboard
-            </button>            
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tabIndex-1">
-                Demo of tabindex="-1"
-            </button>
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataBsBackdropStatic">
+                            Demo of data-bs-backdrop="static"
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataBsKeyBoardFalse">
+                            Demo of data-bs-keyboard
+                        </button>
+                    </div>
+                </div>
+                <div class="div">
+                    <div class="col-12 mb-4">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tabIndex-1">
+                            Demo of tabindex="-1"
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="modal fade" id="dataBsBackdropStatic" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="dataBsBackdropStaticLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -114,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="dataBsKeyBoardFalse" data-bs-keyboard="true" tabindex="-1" aria-labelledby="dataBsKeyBoardFalseLabel" aria-hidden="true">
+            <div class="modal fade" id="dataBsKeyBoardFalse" data-bs-keyboard="false" tabindex="-1" aria-labelledby="dataBsKeyBoardFalseLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -122,7 +135,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            With data-bs-keyboard="true" the Escape key will close this modal. Without having data-bs-backdrop="static", clicking on the backdrop will also close this modal.
+                            With data-bs-keyboard="false" the Escape key will not close this modal. Without having data-bs-backdrop="static", clicking on the backdrop will also close this modal.
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
