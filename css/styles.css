@@ -1,9 +1,6 @@
 
 .xs { color: #800000; font-size: 1.15em; font-weight: bold;  }
-@media (min-width: 576px)                         { .xs { color: #000; font-size: 1em; font-weight: normal; } }
-@media (min-width: 576px) and (max-width: 767px)  { .sm { color: #800000; font-size: 1.15em; font-weight: bold; } } 
-@media (min-width: 768px) and (max-width: 991px)  { .md { color: #800000; font-size: 1.15em; font-weight: bold; } } 
-@media (min-width: 992px) and (max-width: 1199px) { .lg { color: #800000; font-size: 1.15em; font-weight: bold; } } 
-@media (min-width: 1200px)                        { .xl { color: #800000; font-size: 1.15em; font-weight: bold; } } 
 p span {display: block;}
-main { min-height: 500px; }
+@media (min-width: 576px) {
+    .modal-dialog { max-width: 80vw !important; }
+}
