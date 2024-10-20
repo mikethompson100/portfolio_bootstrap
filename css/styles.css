@@ -1,6 +1,4 @@
 
-.xs { color: #800000; font-size: 1.15em; font-weight: bold;  }
-p span {display: block;}
 @media (min-width: 576px) {
     .modal-dialog { max-width: 80vw !important; }
 }
