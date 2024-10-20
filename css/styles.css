@@ -2,3 +2,10 @@
 @media (min-width: 576px) {
     .modal-dialog { max-width: 80vw !important; }
 }
+.navbar-toggler { font-size: 1rem }
+
+.navbar-brand, .nav-link { font-size: .75rem;}
+@media (min-width: 768px) {
+    .navbar-brand, .nav-link { font-size: 1rem;}
+}
+
