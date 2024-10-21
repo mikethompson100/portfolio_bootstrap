@@ -1,4 +1,8 @@
-
+:root {
+    --primary-color: #222;
+    --fontsize: 1.3rem;
+}
+body { font-size: var(--fontsize); color: var(--primary-color); }
 @media (min-width: 576px) {
     .modal-dialog { max-width: 80vw !important; }
 }
@@ -9,3 +13,4 @@
     .navbar-brand, .nav-link { font-size: 1rem;}
 }
 
+#progress { background-color: #303030; color: #fff; border-radius: 7px; }
