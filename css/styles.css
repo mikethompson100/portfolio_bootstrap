@@ -1,6 +1,6 @@
 :root {
     --primary-color: #222;
-    --fontsize: 1.3rem;
+    --fontsize: 1.25rem;
 }
 body { font-size: var(--fontsize); color: var(--primary-color); }
 @media (min-width: 576px) {
