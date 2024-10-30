@@ -15,3 +15,4 @@ body { font-size: var(--fontsize); color: var(--primary-color); }
 
 #progress { background-color: #303030; color: #fff; border-radius: 7px; }
 button { border-radius: 4px; }
+ol li { padding-top: .8rem; padding-bottom: .8rem; }
