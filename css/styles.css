@@ -18,3 +18,25 @@ button { border-radius: 4px; }
 ol li { padding-top: .8rem; padding-bottom: .8rem; }
 
 .sbm { max-width: 10%; }
+#brazil iframe { min-height: 65vh; min-width: 65vw; }
+
+#skills ul { list-style-type: none; }
+#skills .logo img { max-width: 100px; }
+.logo { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 100px; min-height: 100px; margin-bottom: 10px; border: 1px solid #ddf; border-radius: 20px; padding: 6px; }
+
+@keyframes slow-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  img.rotate {
+    animation: slow-rotate 50s linear infinite;
+  }
+
+
+
+footer { margin-bottom: 100px; }
