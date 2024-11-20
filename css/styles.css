@@ -13,6 +13,7 @@ body { font-size: var(--fontsize); color: var(--primary-color); }
     .navbar-brand, .nav-link { font-size: 1rem;}
 }
 
+main {min-height: 65vh; }
 .cert { background-color: #303030; padding: 5px; border-radius: 7px; }
 button { border-radius: 4px; }
 ol li { padding-top: .8rem; padding-bottom: .8rem; }
@@ -22,21 +23,11 @@ ol li { padding-top: .8rem; padding-bottom: .8rem; }
 
 #skills ul { list-style-type: none; }
 #skills .logo img { max-width: 100px; }
-.logo { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 100px; min-height: 100px; margin-bottom: 10px; border: 1px solid #ddf; border-radius: 20px; padding: 6px; }
-
-@keyframes slow-rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  img.rotate {
-    animation: slow-rotate 50s linear infinite;
-  }
+.logo { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 100px; min-height: 100px; margin-bottom: 10px;  padding: 6px; }
 
 
+footer { margin: 75px 0 0; }
+footer img { max-width: 50px; }
+footer a { margin: 4px 10px; text-decoration: none; }
+footer .footer-bg { padding: 15px 25px; }
 
-footer { margin-bottom: 100px; }
