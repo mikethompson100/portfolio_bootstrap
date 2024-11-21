@@ -25,9 +25,14 @@ ol li { padding-top: .8rem; padding-bottom: .8rem; }
 #skills .logo img { max-width: 100px; }
 .logo { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 100px; min-height: 100px; margin-bottom: 10px;  padding: 6px; }
 
-
-footer { margin: 75px 0 0; }
+footer { margin: 75px 0 25px; }
 footer img { max-width: 50px; }
-footer a { margin: 4px 10px; text-decoration: none; }
-footer .footer-bg { padding: 15px 25px; }
+footer a { margin: 4px 10px; text-decoration: none; font-size: .75rem; display: inline-block; justify-content: center; }
+footer a span { padding-left: 5px; }
+footer .footer-bg { padding: 15px 20px; }
+#footer-1 { display: flex; flex-direction: row; align-items: center; justify-content:space-evenly; border-right: 1px solid #000; }
+@media (min-width: 992px) {
+    #footer-1{ min-height: 200px; }
+};
+
 
