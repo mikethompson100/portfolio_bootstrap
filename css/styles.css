@@ -12,23 +12,26 @@ body { font-size: var(--fontsize); color: var(--primary-color); }
 @media (min-width: 768px) {
     .navbar-brand, .nav-link { font-size: 1rem;}
 }
-
+#navbarNav ul li { padding: 0;}
 main {min-height: 65vh; }
 .cert { background-color: #303030; padding: 5px; border-radius: 7px; }
 button { border-radius: 4px; }
-ol li { padding-top: .8rem; padding-bottom: .8rem; }
+li { padding-top: .8rem; padding-bottom: .8rem; }
 
 .sbm { max-width: 24%; }
 @media (min-width: 992px) {
     .sbm { max-width: 15%; }
 }
-
-
+#certifications img { background-color: #fff; border: 2px solid #000; border-bottom: 4px solid blue; }
+#headshot { border-radius: 15px; max-width: 130px; }
+@media screen and (min-width:992px){
+#headshot { max-width: 150px; }
+}
 
 #brazil .modal {
     display: none; /* Hidden by default, show it with JS when triggered */
     position: fixed;
-    top: 50px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -37,15 +40,41 @@ ol li { padding-top: .8rem; padding-bottom: .8rem; }
     justify-content: center;
     align-items: center;
   }
+
+  #brazil .modal-title {
+        font-size: 1.2rem;
+  }
+  @media screen and (min-width: 768px) {
+        #brazil .modal-title { font-size: 1.5rem; }
+  };
   
   /* Modal content container */
 #brazil .modal-content {
     position: relative;
     background-color: white;
-    padding: 20px;
+    padding: 7px;
     max-width: 90%; /* Prevents it from being too large on smaller screens */
     max-height: 80%; /* Prevents it from overflowing vertically */
     overflow: hidden;
+    margin: 7% auto 0 auto;
+  }
+
+  #brazil .modal-header {
+    padding: .5rem;
+  }
+
+  #brazil .modal-header a {
+    font-size: .85rem;
+    color: green;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 1200px) {
+    #brazil .modal-content { max-width: 1021.5px; margin: 0 auto; }
+  }
+
+  @media screen and (min-width: 1500px) {
+    #brazil .modal-content { max-width: 62%; }
   }
   
   /* Responsive video wrapper with 16:9 aspect ratio */
@@ -56,6 +85,7 @@ ol li { padding-top: .8rem; padding-bottom: .8rem; }
     height: 0;
     overflow: hidden;
     background: black; /* Ensures no background is visible around the iframe */
+    border-radius: 5px;
   }
   
 #brazil .video-wrapper iframe {
@@ -79,7 +109,7 @@ ol li { padding-top: .8rem; padding-bottom: .8rem; }
 #skills ul { list-style-type: none; }
 #skills .logo img { max-width: 100px; }
 .logo { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 100px; min-height: 100px; margin-bottom: 10px;  padding: 6px; }
-#spain img { width: 311.86px; height: 211px; }
+
 
 footer { margin: 75px 0 25px; }
 footer img { max-width: 50px; margin-right: 4px; }
