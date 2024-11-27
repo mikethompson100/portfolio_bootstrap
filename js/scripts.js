@@ -9,8 +9,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.getElementById('brazil').addEventListener('hidden.bs.modal', function () {
-    const iframe = document.getElementById('youtubeVideo');
-    iframe.src = iframe.src; // Reset the iframe src
- });
+
   
