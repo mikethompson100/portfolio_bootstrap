@@ -18,12 +18,12 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
 
 .sbm { max-width: 24%; }
 @media (min-width: 992px) {
-    .sbm { max-width: 15%; }
+    .sbm { max-width: 10%; }
 }
 #certifications img { background-color: #fff; border: 2px solid #000; border-bottom: 4px solid blue; }
-#headshot { border-radius: 15px; max-width: 130px; }
-@media screen and (min-width:992px){
-#headshot { max-width: 150px; }
+#headshot { border-radius: 15px; max-width: 100px; }
+@media screen and (min-width:992px) {
+#headshot { max-width: 130px; }
 }
 
 #brazil .modal {
@@ -97,7 +97,12 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
 
 
 #skills ul { list-style-type: none; }
-#skills .logo img { max-width: 100px; }
+
+#skills .logo img { max-width: 145px; margin: 10px 0; }
+@media screen and (min-width: 768px) {
+    #skills .logo img { max-width: 90px; margin: 0; }
+}
+
 .logo { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 100px; min-height: 100px; margin-bottom: 10px;  padding: 6px; }
 
 
