@@ -32,12 +32,18 @@ body { font-size: var(--fontsize); color: var(--primary-color); }
     }
 }
 
-@media screen and (min-width: 768px) and (orientation: portrait) {
-    .modal-dialog { max-width: none; }
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    #brazil .modal-dialog { max-width: 90vw; margin: 5px auto; }
+}
+@media screen and (min-width: 767px) and (orientation: landscape) {
+    #brazil .modal-dialog { max-width: 70vw; margin: 5px auto; }
+}
+@media screen and (min-width: 768px) {
+    #brazil .modal-dialog { max-width: 90vw; }
 }
 
 @media screen and (min-width: 1200px)  {
-    .modal-dialog { max-width: none; }
+    #brazil .modal-dialog { max-width: 70vw; }
 }
 
 .navbar-toggler { font-size: 1rem }
@@ -59,7 +65,7 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
 #certifications img { background-color: #fff; border: 2px solid #000; border-bottom: 4px solid #0d6efd; }
 #headshot { border-radius: 15px; max-width: 100px; }
 @media screen and (min-width:992px) {
-#headshot { max-width: 130px; }
+#headshot { max-width: 161px; }
 }
 
 .modal img { border: 1px solid #ddd; border-radius: 10px; }
@@ -109,9 +115,7 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
     #brazil .modal-content { max-width: 1021.5px; margin: 0 auto; }
   }
 
-  @media screen and (min-width: 1500px) {
-    /*#brazil .modal-content { max-width: 62%; }*/
-  }
+
   
   /* Responsive video wrapper with 16:9 aspect ratio */
 #brazil .video-wrapper {
@@ -135,6 +139,9 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
     pointer-events: auto; /* Allow interaction with video on hover */
   }
 
+  @media screen and (min-width: 768px) and (orientation: landscape) {
+    #brazil .modal-dialog { max-width: 50vw; }
+}
 
 #skills ul { list-style-type: none; }
 
