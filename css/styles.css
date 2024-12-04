@@ -68,6 +68,7 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
 #headshot { max-width: 161px; }
 }
 
+
 .modal img { border: 1px solid #ddd; border-radius: 10px; }
 
 #brazil .modal {
@@ -115,7 +116,11 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
     #brazil .modal-content { max-width: 1021.5px; margin: 0 auto; }
   }
 
-
+  @media screen and (min-width: 768px) {
+      .modal-dialog {
+          max-width: 85vw;
+      }
+  }
   
   /* Responsive video wrapper with 16:9 aspect ratio */
 #brazil .video-wrapper {
