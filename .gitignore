@@ -1,1 +1,12 @@
 .DS_Store
+# Ignore all PNG files
+*.png
+
+# Ignore all JPEG files
+*.jpeg
+
+# Ignore all JPG files
+*.jpg
+
+# Ignore all SVG files
+*.svg
