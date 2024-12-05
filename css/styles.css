@@ -31,6 +31,11 @@ body { font-size: var(--fontsize); color: var(--primary-color); }
         margin-top: 54px;
     }
 }
+.navbar .nav-logos img { max-width: 30px; margin-left: 15px; }
+.navbar h1 { font-size: 1rem; margin-bottom: 0; }
+@media screen and (min-width: 768px) {
+    .navbar h1 { font-size: 1.5rem; }
+}
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
     #brazil .modal-dialog { max-width: 90vw; margin: 5px auto; }
@@ -54,6 +59,10 @@ body { font-size: var(--fontsize); color: var(--primary-color); }
 }
 #navbarNav ul li { padding: 0;}
 main {min-height: 65vh; }
+main .ext-links a { font-size: .7rem; }
+@media (min-width: 768px) {
+    main .ext-links a { font-size: 1rem; }
+}
 .cert { background-color: #303030; padding: 5px; border-radius: 7px; }
 button { border-radius: 4px; }
 li { padding-top: .8rem; padding-bottom: .8rem; }
@@ -68,7 +77,8 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
 #headshot { max-width: 161px; }
 }
 
-
+.modal-header .modal-close-button { font-size: 1.75rem; background: transparent; border: 0; 
+    margin: calc(-.5* var(--bs-modal-header-padding-y)) calc(-.5* var(--bs-modal-header-padding-x)) calc(-.5* var(--bs-modal-header-padding-y)) auto;}
 .modal img { border: 1px solid #ddd; border-radius: 10px; }
 
 #brazil .modal {
