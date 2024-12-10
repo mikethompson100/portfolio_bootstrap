@@ -1,67 +1,68 @@
 :root {
-    --primary-color: #222;
-    --fontsize: 1.25rem;
+  --primary-color: #222;
+  --fontsize: 1.25rem;
 }
 body { font-size: var(--fontsize); color: var(--primary-color); }
 
 .hero {
-    background-image: url('../images/hero.jpg');
-    min-height: 25vh;
-    background-size: cover;
+  background-image: url('../images/hero.jpg');
+  min-height: 25vh;
+  background-size: cover;
 }
 @media (min-width: 768px) {
-    .hero { min-height: 30vh; }
+  .hero { min-height: 30vh; }
 }
 .navheight {
-    min-height: 90px !important;
+  min-height: 90px !important;
 }
 
 @media screen and (min-width: 768px) {
-    .navheight {
-        min-height: 80px !important;
-        padding-top: 4px;
-        padding-bottom: 4px;
-    }
+  .navheight {
+      min-height: 80px !important;
+      padding-top: 4px;
+      padding-bottom: 4px;
+  }
 }
 .navTitle {
-    margin-top: 49px;
+  margin-top: 49px;
 }
 @media (min-width: 768px) {
-    .navTitle {
-        margin-top: 54px;
-    }
+  .navTitle {
+      margin-top: 54px;
+  }
 }
 .navbar .nav-logos img { max-width: 30px; margin-left: 15px; }
+.navbar .nav-logos a { font-size: .6rem; color: #fff; display: block; }  /* Accessibility */
 .navbar h1 { font-size: 1rem; margin-bottom: 0; }
 @media screen and (min-width: 768px) {
-    .navbar h1 { font-size: 1.5rem; }
+  .navbar h1 { font-size: 1.5rem; }
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
-    #brazil .modal-dialog { max-width: 90vw; margin: 5px auto; }
+  #brazil .modal-dialog { max-width: 90vw; margin: 5px auto; }
 }
 @media screen and (min-width: 767px) and (orientation: landscape) {
-    #brazil .modal-dialog { max-width: 70vw; margin: 5px auto; }
+  #brazil .modal-dialog { max-width: 70vw; margin: 5px auto; }
 }
 @media screen and (min-width: 768px) {
-    #brazil .modal-dialog { max-width: 90vw; }
+  #brazil .modal-dialog { max-width: 90vw; }
 }
 
 @media screen and (min-width: 1200px)  {
-    #brazil .modal-dialog { max-width: 70vw; }
+  #brazil .modal-dialog { max-width: 70vw; }
 }
 
 .navbar-toggler { font-size: 1rem }
 
 .navbar-brand, .nav-link { font-size: .75rem;}
 @media (min-width: 768px) {
-    .navbar-brand, .nav-link { font-size: 1rem;}
+  .navbar-brand, .nav-link { font-size: 1rem;}
 }
 #navbarNav ul li { padding: 0;}
 main {min-height: 65vh; }
 main .ext-links a { font-size: .7rem; }
 @media (min-width: 768px) {
-    main .ext-links a { font-size: 1rem; }
+  main .ext-links a { font-size: 1rem; }
 }
 .cert { background-color: #303030; padding: 5px; border-radius: 7px; }
 button { border-radius: 4px; }
@@ -69,7 +70,7 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
 
 .sbm { max-width: 24%; }
 @media (min-width: 992px) {
-    .sbm { max-width: 10%; }
+  .sbm { max-width: 10%; }
 }
 #certifications img { background-color: #fff; border: 2px solid #000; border-bottom: 4px solid #0d6efd; }
 #headshot { border-radius: 15px; max-width: 100px; }
@@ -78,91 +79,91 @@ li { padding-top: .8rem; padding-bottom: .8rem; }
 }
 
 .modal-header .modal-close-button { font-size: 1.75rem; background: transparent; border: 0; 
-    margin: calc(-.5* var(--bs-modal-header-padding-y)) calc(-.5* var(--bs-modal-header-padding-x)) calc(-.5* var(--bs-modal-header-padding-y)) auto;}
+  margin: calc(-.5* var(--bs-modal-header-padding-y)) calc(-.5* var(--bs-modal-header-padding-x)) calc(-.5* var(--bs-modal-header-padding-y)) auto;}
 .modal img { border: 1px solid #ddd; border-radius: 10px; }
 
 #brazil .modal {
-    display: none; /* Hidden by default, show it with JS when triggered */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-  }
+  display: none; /* Hidden by default, show it with JS when triggered */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
 
-  #brazil .modal-title {
-        font-size: 1.2rem;
-  }
-  @media screen and (min-width: 768px) {
-        #brazil .modal-title { font-size: 1.5rem; }
-  };
-  
-  /* Modal content container */
+#brazil .modal-title {
+      font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+      #brazil .modal-title { font-size: 1.5rem; }
+};
+
+/* Modal content container */
 #brazil .modal-content {
-    position: relative;
-    background-color: white;
-    padding: 7px;
-    max-width: 90%; /* Prevents it from being too large on smaller screens */
-    max-height: 80%; /* Prevents it from overflowing vertically */
-    overflow: hidden;
-    margin: 7% auto 0 auto;
-  }
+  position: relative;
+  background-color: white;
+  padding: 7px;
+  max-width: 90%; /* Prevents it from being too large on smaller screens */
+  max-height: 80%; /* Prevents it from overflowing vertically */
+  overflow: hidden;
+  margin: 7% auto 0 auto;
+}
 
-  #brazil .modal-header {
-    padding: .5rem;
-  }
+#brazil .modal-header {
+  padding: .5rem;
+}
 
-  #brazil .modal-header a {
-    font-size: .85rem;
-    color: green;
-    font-weight: bold;
-  }
+#brazil .modal-header a {
+  font-size: .85rem;
+  color: green;
+  font-weight: bold;
+}
 
-  @media screen and (min-width: 1200px) {
-    #brazil .modal-content { max-width: 1021.5px; margin: 0 auto; }
-  }
+@media screen and (min-width: 1200px) {
+  #brazil .modal-content { max-width: 1021.5px; margin: 0 auto; }
+}
 
-  @media screen and (min-width: 768px) {
-      .modal-dialog {
-          max-width: 85vw;
-      }
-  }
-  
-  /* Responsive video wrapper with 16:9 aspect ratio */
+@media screen and (min-width: 768px) {
+    .modal-dialog {
+        max-width: 85vw;
+    }
+}
+
+/* Responsive video wrapper with 16:9 aspect ratio */
 #brazil .video-wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
-    height: 0;
-    overflow: hidden;
-    background: black; /* Ensures no background is visible around the iframe */
-    border-radius: 5px;
-  }
-  
-#brazil .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  #brazil .video-wrapper iframe {
-    pointer-events: auto; /* Allow interaction with video on hover */
-  }
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+  height: 0;
+  overflow: hidden;
+  background: black; /* Ensures no background is visible around the iframe */
+  border-radius: 5px;
+}
 
-  @media screen and (min-width: 768px) and (orientation: landscape) {
-    #brazil .modal-dialog { max-width: 50vw; }
+#brazil .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#brazil .video-wrapper iframe {
+  pointer-events: auto; /* Allow interaction with video on hover */
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  #brazil .modal-dialog { max-width: 50vw; }
 }
 
 #skills ul { list-style-type: none; }
 
 #skills .logo img { max-width: 145px; margin: 10px 0; }
 @media screen and (min-width: 768px) {
-    #skills .logo img { max-width: 90px; margin: 0; }
+  #skills .logo img { max-width: 90px; margin: 0; }
 }
 
 .logo { display: flex; flex-direction: column; justify-content: center; min-width: 100px; min-height: 100px; margin-bottom: 10px;  padding: 6px; }
@@ -173,6 +174,5 @@ footer a { margin: 4px 10px; text-decoration: none; font-size: .85rem; display: 
 footer a span { padding-left: 5px; }
 footer .footer-bg { padding: 15px 20px; }
 #footer-1 { display: flex; flex-direction: row; align-items: center; justify-content:space-evenly; border-right: 1px solid #000; }
-
 
 
