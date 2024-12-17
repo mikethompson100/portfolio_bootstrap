@@ -1,5 +1,4 @@
 // Manage navigation highlighting and active classes
-
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', function () {
@@ -9,28 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/* const toggler = document.querySelector('.navbar .navbar-toggler');
-toggler.addEventListener('click', function() {
-     if ($('#navbarNav').hasClass('show')) {
-        $('#nav-logos').css('display', 'none');
-    }
-    else $('#nav-logos').css('display', 'flex');
-   
-}); 
-document.addEventListener('DOMContentLoaded', function () {
-const toggler = document.querySelector('.navbar .navbar-toggler');
-const navLogos = document.querySelector('#nav-logos');
+// Hamburger menu icons toggling in and out of view
+    const toggler = document.querySelector('.navbar .navbar-toggler');
+    const nav_logos = document.getElementById('nav-logos');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
 
-toggler.addEventListener('click', function () {
-    if (this.classList.contains('collapsed')) {
-        console.log(navLogos.style);
-        navLogos.style.display = 'flex !important;';
-    } else if (!this.classList.contains('collapsed')) { 
-        console.log(navLogos.style);
-        navLogos.style.display = 'none !important;';
-    }
-    else alert('ERROR');
-})
-});*/
+    // Immediately hides the nav_logos element when the menu button is clicked
+    toggler.addEventListener('click', function() {
+        nav_logos.setAttribute("style", "display: none !important;");
+    });
 
-
+    // Waits for the collapse event to finish before displaying logos again
+    navbarCollapse.addEventListener('hidden.bs.collapse', function() {
+        nav_logos.setAttribute("style", "display: flex !important;");
+    });
