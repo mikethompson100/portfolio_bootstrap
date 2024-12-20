@@ -22,3 +22,4 @@ toggler.addEventListener('click', function () {
 navbarCollapse.addEventListener('hidden.bs.collapse', function () {
     nav_logos.setAttribute("style", "display: flex !important;");
 });
+

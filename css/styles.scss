@@ -1,3 +1,5 @@
+*{border: 1px solid red;}
+
 :root {
   --primary-color: #222;
   --fontsize: 1.25rem;
@@ -50,7 +52,7 @@ body {
       }
     }
     .hero {
-      background-image: url('../images/hero.jpg');
+      background-image: url('../../images/hero.jpg');
       min-height: 25vh;
       background-size: cover;
       @media (min-width: 768px) {

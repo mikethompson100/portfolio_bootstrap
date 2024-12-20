@@ -1,3 +1,7 @@
+* {
+  border: 1px solid red;
+}
+
 :root {
   --primary-color: #222;
   --fontsize: 1.25rem;
@@ -86,7 +90,7 @@ body header .navbar .nav-link {
   }
 }
 body header .hero {
-  background-image: url("../images/hero.jpg");
+  background-image: url("../../images/hero.jpg");
   min-height: 25vh;
   background-size: cover;
 }
