@@ -63,6 +63,9 @@ body header .hero {
 body header .navTitle {
   margin-top: 49px;
 }
+body header .navTitle h1 {
+  margin-bottom: 0;
+}
 @media (min-width: 768px) {
   body header .navTitle {
     margin-top: 54px;
