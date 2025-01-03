@@ -112,9 +112,9 @@ body {
       }
     }
 
+  /* home page */
     &#home {
 
-      /* home page */
       ol,
       ul {
         padding-left: 1rem;
@@ -125,9 +125,9 @@ body {
       }
     }
 
+    /* skills page */
     &#skills {
 
-      /* skills page */
       #certifications {
         img {
           background-color: #fff;
@@ -163,9 +163,9 @@ body {
       }
     }
 
+    /* experience page */
     &#experience {
 
-      /* experience page */
       ul {
         padding-left: 1rem;
 
@@ -175,18 +175,18 @@ body {
       }
     }
 
+    /* about page */
     &#about {
-
-      /* about page */
-      #headshot {
-        border-radius: 15px;
-        max-width: 100px;
-      }
-
-      @media screen and (min-width:992px) {
-        #headshot {
-          max-width: 161px;
-        }
+        #headshotContainer{
+          height: 161px;
+          display: inline;
+          #headshot {
+            border-radius: 15px;
+            max-width: 100px;
+            @media screen and (min-width:992px) {
+                max-width: 161px;
+            }
+          }
       }
 
       .sbm {
@@ -200,6 +200,7 @@ body {
       }
 
       #modals {
+        .flag { min-height: 135px; }
         .modal {
 
           &#colombia,
