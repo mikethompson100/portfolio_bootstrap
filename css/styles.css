@@ -250,11 +250,6 @@ body main#about #modals #brazil.modal .modal-dialog .modal-content .video-wrappe
 body footer {
   margin: 50px 0 25px;
 }
-@media screen and (min-width: 768px) {
-  body footer .footer-bg {
-    padding: 15px 20px;
-  }
-}
 body footer .footer-bg img {
   max-width: 40px;
   margin-right: 4px;
