@@ -73,14 +73,18 @@ body {
 
     .navTitle {
       margin-top: 49px;
+
       @media (min-width: 768px) {
         margin-top: 54px;
       }
 
-      h1 { margin-bottom: 0; 
+      h1 {
+        margin-bottom: 0;
+
         @media (min-width: 768px) and (max-width: 991px) {
           font-size: 2.2rem;
         }
+
         @media (min-width: 992px) {
           margin-bottom: .5rem;
         }
@@ -112,7 +116,7 @@ body {
       }
     }
 
-  /* home page */
+    /* home page */
     &#home {
 
       ol,
@@ -127,8 +131,9 @@ body {
 
     /* skills page */
     &#skills {
-
       #certifications {
+        max-width: 992px;
+
         img {
           background-color: #fff;
           border: 2px solid #000;
@@ -177,16 +182,18 @@ body {
 
     /* about page */
     &#about {
-        #headshotContainer{
-          height: 161px;
-          display: inline;
-          #headshot {
-            border-radius: 15px;
-            max-width: 100px;
-            @media screen and (min-width:992px) {
-                max-width: 161px;
-            }
+      #headshotContainer {
+        height: 161px;
+        display: inline;
+
+        #headshot {
+          border-radius: 15px;
+          max-width: 100px;
+
+          @media screen and (min-width:992px) {
+            max-width: 161px;
           }
+        }
       }
 
       .sbm {
@@ -200,7 +207,10 @@ body {
       }
 
       #modals {
-        .flag { min-height: 135px; }
+        .flag {
+          min-height: 135px;
+        }
+
         .modal {
 
           &#colombia,
@@ -297,7 +307,7 @@ body {
     }
   }
 
-  footer { 
+  footer {
     margin: 50px 0 25px;
 
     .footer-bg {
