@@ -2,10 +2,11 @@
   --primary-color: #000;
   --primary-blue: #0D6EFD;
   --fontsize: 1.25rem;
-  --fontsize-mobile: 1rem;
+  --fontsize-mobile: 1.2rem;
 }
 
 body {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
   li {
     padding-top: .8rem;
     padding-bottom: .8rem;
@@ -151,11 +152,11 @@ body {
         padding: 6px;
 
         img {
-          max-width: 145px;
+          max-width: 115px;
           margin: 10px 0;
 
           @media screen and (min-width: 768px) {
-            max-width: 90px;
+            max-width: 103px;
             margin: 0;
           }
         }
